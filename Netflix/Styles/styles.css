@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+img {
+    max-width: 100%;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.netflixlogo {
+    display: block;
+}
+.netflixlogo svg {
+    fill: rgb(229, 9, 20);
+    height: 37px;
+}
+.topright {
+    text-align: right;
+}
+.signin {
+    display: inline-block;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 7px 17px;
+    border-radius: 3px;
+    border-style: none;
+}
+.language {
+    background: transparent;
+    color: white;
+    padding: 6px 0 6px 20px;
+    border-radius: 3px;
+}
+.select {
+    display: inline-block;
+    margin-right:30px;
+}
+.select svg {
+    height: 20px;
+    fill: white;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+.splash {
+    position: relative;
+}
+.gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    inset: 0;
+}
+.background img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+.content {
+    max-width: 655px;
+    left: 50%;
+    margin-left: 327.5px;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+.splash h1, .splash h2, .splash h3 {
+    font-weight: normal;
+}
+.splash h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.splash h2 {
+    font-size: 26px;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+.splash h3 {
+    font-size: 19.2px;
+}
+.splash form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-top: 20px;
+}
+.splash input {
+    padding: 15px 10px;
+    font-size: 19.2px;
+    width: 100%;
+}
+.splash input ~ span {
+    position: absolute;
+    left: 12px;
+    top: 19px;
+    z-index: 5;
+    color: rgb(170, 170, 170);
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+.splash input:focus {
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+.splash input:focus ~ span {
+    top: 4px;
+    font-size: 12.8px;
+}
+.splash button {
+    font-size: 26px;
+    padding: 12.5px 26px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: 0;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+    background-color: black;
+    border-top: 8px;
+    border-top-style: solid;
+    border-top-color: rgb(34, 34, 34);
+}
+.texts h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+.texts p {
+    font-size: 24px;
+}
+.medias1 {
+    position: relative;
+}
+.medias1 img {
+    width: 500px;
+}
+.medias1 video {
+    width: 366px;
+    position: absolute;
+    top: 77px;
+    left: 65px;
+}
+section:nth-child(even) .texts {
+    order: 2;
+}
+.medias2 {
+    position: relative;
+}
+.download {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(102, 102, 102);
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: 330px;
+    position: absolute;
+    bottom: 40px;
+    left: 132px;
+    background-color: black;
+    grid-template-columns: max-content 1fr max-content;
+}
+.download img {
+    height: 75px;
+    width: auto;
+}
+.nametitle {
+    font-size: 16px;
+}
+.status {
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(0, 155, 252);
+    padding-right: 30px;
+}
+.medias3 {
+    position: relative;
+}
+.medias3 img {
+    position: relative;
+    width: 500px;
+    z-index: 5;
+}
+.medias3 video {
+    width: 300px;
+    position: absolute;
+    top: 55px;
+    left: 95px;
+}
+.medias4 img {
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.advertlast {
+    border-bottom: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(34, 34, 34);
+}
+.faq {
+    padding: 70px 30px;
+
+}
+.faq h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.questions {
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 26px;
+
+}
+.question {
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    margin-bottom: 10px;
+}
+.question svg {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+.questionheader {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black
+}
+.questioncontent {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.question input[type="checkbox"] {
+    display: none;
+}
+.question input[type="checkbox"]:checked ~ .questioncontent {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+.question input[type="checkbox"]:checked ~ .questionheader svg {
+    transform: rotate(180deg);
+}
+.faq form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-top: 20px;
+    max-width: 635px;
+    margin: 0 auto;
+}
+.faq input {
+    padding: 15px 10px;
+    font-size: 19.2px;
+    width: 100%;
+}
+.faq input ~ span {
+    position: absolute;
+    left: 12px;
+    top: 19px;
+    z-index: 5;
+    color: rgb(170, 170, 170);
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+.faq input:focus {
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+.faq input:focus ~ span {
+    top: 4px;
+    font-size: 12.8px;
+}
+.faq button {
+    font-size: 26px;
+    padding: 12.5px 26px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: 0;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.faq h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+}
